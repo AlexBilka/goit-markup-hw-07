@@ -5,19 +5,12 @@ body {
   letter-spacing: 0.03em;
   color: var(--p-color);
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.link {
-  text-decoration: none;
-  color: inherit;
-}
-.address {
-  font-style: normal;
-}
 .section {
   padding-bottom: 94px;
+}
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
