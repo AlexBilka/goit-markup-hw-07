@@ -1,0 +1,23 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--p-color);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.address {
+  font-style: normal;
+}
+.section {
+  padding-bottom: 94px;
+}

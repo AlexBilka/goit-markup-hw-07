@@ -1,0 +1,29 @@
+.client {
+  padding-top: 94px;
+}
+.client-title {
+  margin-bottom: 50px;
+  text-align: center;
+  color: var(--title-color);
+  font-size: 36px;
+  line-height: 1.16;
+}
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+.client-link {
+  display: block;
+  padding: 15px 32px;
+  height: 92px;
+  border: 1px solid var(--icon-gray);
+  border-radius: 4px;
+  fill: var(--icon-gray);
+  transition: border var(--animation-time) var(--cubic-function),
+    fill var(--animation-time) var(--cubic-function);
+}
+.client-link:hover,
+.client-link:focus {
+  fill: var(--accent);
+  border: 1px solid var(--accent);
+}

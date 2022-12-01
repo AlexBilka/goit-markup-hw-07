@@ -1,0 +1,122 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--gray);
+}
+.footer-wrap {
+  display: flex;
+  align-items: baseline;
+}
+.footer .logo {
+  display: block;
+  margin-bottom: 30px;
+}
+.footer .logo {
+  color: var(--white);
+}
+.address-item + .address-item {
+  margin-top: 10px;
+}
+.address-item {
+  color: var(--white);
+}
+.footer-link {
+  transition: color var(--animation-time) var(--cubic-function);
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent);
+}
+.opacity {
+  opacity: 60%;
+}
+.follow-wrap {
+  margin-left: 94px;
+}
+.follow-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.follow-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.follow-soc-item {
+  width: 44px;
+  height: 44px;
+}
+.follow-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--soc-link-opacity);
+  fill: var(--white);
+  transition: background-color var(--animation-time) var(--cubic-function);
+}
+.follow-soc-link:hover,
+.follow-soc-link:focus {
+  background-color: var(--accent);
+}
+.follow-form-wrap {
+  margin-left: auto;
+}
+.follow-form-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.follow-form {
+  display: flex;
+}
+.follow-form-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 15px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  color: var(--white);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: transparent;
+  transition: border-color var(--animation-time) var(--cubic-function);
+}
+.follow-form-input:hover,
+.follow-form-input:focus {
+  border: 1px solid var(--white);
+}
+.follow-form-btn {
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  border-radius: 4px;
+
+  font-family: inherit;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--accent);
+  cursor: pointer;
+  transition: background-color var(--animation-time) var(--cubic-function);
+}
+.follow-form-btn:hover,
+.follow-form-btn:focus {
+  background-color: var(--second-btn-color);
+}
+.follow-form-icon {
+  margin-left: 10px;
+  fill: var(--white);
+}

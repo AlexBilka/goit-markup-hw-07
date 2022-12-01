@@ -1,0 +1,83 @@
+.portfolio {
+  padding-top: 94px;
+}
+.filter-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  gap: 8px;
+}
+.filter-btn {
+  padding: 6px 22px;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--title-color);
+  background-color: var(--portfolio-secondary-btn-color);
+  cursor: pointer;
+  transition: background-color var(--animation-time) var(--cubic-function),
+    color var(--animation-time) var(--cubic-function),
+    box-shadow var(--animation-time) var(--cubic-function);
+}
+.filter-btn:hover {
+  color: var(--white);
+  background-color: var(--accent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.project-thumb-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.project-thumb-overlay {
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(101%);
+  transition: transform var(--animation-time) var(--cubic-function);
+  overflow: auto;
+
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--white);
+  background-color: var(--overlay-col);
+}
+.project-item:hover .project-thumb-overlay,
+.project-item:focus .project-thumb-overlay {
+  transform: translateY(0);
+}
+.project-item {
+  display: block;
+  transition: box-shadow var(--animation-time) var(--cubic-function);
+}
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.project-subtext {
+  padding: 20px 24px;
+  border: 1px solid var(--portfolio-brd);
+}
+.project-text {
+  font-size: 16px;
+  line-height: 1.87;
+}
