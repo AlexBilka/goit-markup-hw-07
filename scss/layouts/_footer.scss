@@ -1,7 +1,7 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--gray);
+  background-color: $col-bg-dark;
 }
 .footer-wrap {
   display: flex;
@@ -12,20 +12,20 @@
   margin-bottom: 30px;
 }
 .footer .logo {
-  color: var(--white);
+  color: $col-logo-ligh;
 }
 .address-item + .address-item {
   margin-top: 10px;
 }
 .address-item {
-  color: var(--white);
+  color: $col-text-secondary;
 }
 .footer-link {
-  transition: color var(--animation-time) var(--cubic-function);
+  transition: color $time-animation $function-cubic;
 }
 .footer-link:hover,
 .footer-link:focus {
-  color: var(--accent);
+  color: $col-accent;
 }
 .opacity {
   opacity: 60%;
@@ -38,7 +38,7 @@
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--white);
+  color: $col-text-secondary;
 }
 .follow-soc-list {
   display: flex;
@@ -56,13 +56,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--soc-link-opacity);
-  fill: var(--white);
-  transition: background-color var(--animation-time) var(--cubic-function);
+  background-color: $col-bg-soc-icon-footer;
+  fill: $col-icon-light;
+  transition: background-color $time-animation $function-cubic;
 }
 .follow-soc-link:hover,
 .follow-soc-link:focus {
-  background-color: var(--accent);
+  background-color: $col-accent;
 }
 .follow-form-wrap {
   margin-left: auto;
@@ -72,7 +72,7 @@
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--white);
+  color: $col-text-secondary;
 }
 .follow-form {
   display: flex;
@@ -82,17 +82,17 @@
   height: 50px;
   padding-left: 15px;
   margin-right: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: $border-follow-input;
   background-color: transparent;
-  color: var(--white);
+  color: $col-text-secondary;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: transparent;
-  transition: border-color var(--animation-time) var(--cubic-function);
+  transition: border-color $time-animation $function-cubic;
 }
 .follow-form-input:hover,
 .follow-form-input:focus {
-  border: 1px solid var(--white);
+  border: $border-follow-input-hover;
 }
 .follow-form-btn {
   display: flex;
@@ -103,19 +103,19 @@
 
   font-family: inherit;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--white);
+  color: $col-text-secondary;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  background-color: var(--accent);
-  transition: background-color var(--animation-time) var(--cubic-function);
+  background-color: $col-accent;
+  transition: background-color $time-animation $function-cubic;
 }
 .follow-form-btn:hover,
 .follow-form-btn:focus {
-  background-color: var(--second-btn-color);
+  background-color: $col-btn-bg-secondary;
 }
 .follow-form-icon {
   margin-left: 10px;
-  fill: var(--white);
+  fill: $col-icon-light;
 }

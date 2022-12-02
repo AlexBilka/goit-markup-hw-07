@@ -15,15 +15,15 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  color: var(--title-color);
-  background-color: var(--portfolio-secondary-btn-color);
-  transition: background-color var(--animation-time) var(--cubic-function),
-    color var(--animation-time) var(--cubic-function),
-    box-shadow var(--animation-time) var(--cubic-function);
+  color: $col-title-primary;
+  background-color: $time-animation $function-cubic;
+  transition: background-color $time-animation $function-cubic,
+    color $time-animation $function-cubic,
+    box-shadow $time-animation $function-cubic;
 }
 .filter-btn:hover {
-  color: var(--white);
-  background-color: var(--accent);
+  color: $col-text-secondary;
+  background-color: $col-accent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -44,13 +44,13 @@
   top: 0;
   left: 0;
   transform: translateY(101%);
-  transition: transform var(--animation-time) var(--cubic-function);
+  transition: transform $time-animation $function-cubic;
   overflow: auto;
 
   font-size: 18px;
   line-height: 1.55;
-  color: var(--white);
-  background-color: var(--overlay-col);
+  color: $col-text-secondary;
+  background-color: $col-overlay-portfolio-card;
 }
 .project-item:hover .project-thumb-overlay,
 .project-item:focus .project-thumb-overlay {
@@ -58,7 +58,7 @@
 }
 .project-item {
   display: block;
-  transition: box-shadow var(--animation-time) var(--cubic-function);
+  transition: box-shadow $time-animation $function-cubic;
 }
 .project-item:hover,
 .project-item:focus {
@@ -70,11 +70,11 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-color);
+  color: $col-title-primary;
 }
 .project-subtext {
   padding: 20px 24px;
-  border: 1px solid var(--portfolio-brd);
+  border: 1px solid $col-border-portfolio-card;
 }
 .project-text {
   font-size: 16px;

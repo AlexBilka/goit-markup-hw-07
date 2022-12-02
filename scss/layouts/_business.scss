@@ -7,7 +7,7 @@
 .business-title {
   margin-bottom: 50px;
   text-align: center;
-  color: var(--title-color);
+  color: $col-title-primary;
   font-size: 36px;
   line-height: 1.16;
 }
@@ -28,6 +28,6 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
-  color: var(--white);
-  background-color: var(--business-subtitle-bg);
+  color: $col-text-secondary;
+  background-color: $col-bg-business-subtitle;
 }

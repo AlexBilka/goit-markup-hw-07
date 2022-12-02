@@ -3,9 +3,9 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--backdrop-col);
-  transition: opacity var(--animation-time) var(--cubic-function),
-    visibility var(--animation-time) var(--cubic-function);
+  background-color: $col-backdrop;
+  transition: opacity $time-animation $function-cubic,
+    visibility $time-animation $function-cubic;
 }
 .modal {
   width: 530px;
@@ -15,13 +15,13 @@
   left: 50%;
   padding: 40px;
 
-  background: var(--white);
+  background: $col-bg-light;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--animation-time) var(--cubic-function);
+  transition: transform $time-animation $function-cubic;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.5);
@@ -39,13 +39,13 @@
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: var(--white);
+  background-color: $col-bg-light;
   outline: transparent;
-  transition: fill var(--animation-time) var(--cubic-function);
+  transition: fill $time-animation $function-cubic;
 }
 .modal-close:hover,
 .modal-close:focus {
-  fill: var(--accent);
+  fill: $col-accent;
 }
 .is-hidden {
   opacity: 0;
@@ -57,7 +57,7 @@
   font-size: 20px;
   text-align: center;
 
-  color: var(--title-color);
+  color: title-color;
 }
 .modal-form {
   display: flex;
@@ -84,23 +84,23 @@
   height: 40px;
   padding-left: 42px;
 
-  border: 1px solid var(--form-col);
+  border: 1px solid $col-border-form;
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
-  transition: border-color var(--animation-time) var(--cubic-function);
+  transition: border-color $time-animation $function-cubic;
 }
 .modal-input:hover,
 .modal-input:focus {
-  border: 1px solid var(--accent);
+  border: 1px solid $col-accent;
 }
 .modal-icon,
 .modal-icon {
-  transition: fill var(--animation-time) var(--cubic-function);
+  transition: fill $time-animation $function-cubic;
 }
 .modal-input:hover + .modal-icon,
 .modal-input:focus + .modal-icon {
-  fill: var(--accent);
+  fill: $col-accent;
 }
 .modal-coment {
   width: 100%;
@@ -109,16 +109,16 @@
   padding-top: 12px;
   margin-bottom: 5px;
 
-  border: 1px solid var(--form-col);
+  border: 1px solid $col-border-form;
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
   resize: none;
-  transition: border-color var(--animation-time) var(--cubic-function);
+  transition: border-color $time-animation $function-cubic;
 }
 .modal-coment:hover,
 .modal-coment:focus {
-  border: 1px solid var(--accent);
+  border: 1px solid $col-accent;
 }
 .check-text {
   display: flex;
@@ -130,7 +130,7 @@
 .check-text span {
   width: 16px;
   height: 15px;
-  border: 1px solid var(--title-color);
+  border: 1px solid $col-title-primary;
   border-radius: 2px;
   margin-right: 7px;
   display: flex;
@@ -139,29 +139,29 @@
   fill: transparent;
 }
 .check-text span {
-  transition: background-color var(--animation-time) var(--cubic-function),
-    border-color var(--animation-time) var(--cubic-function);
+  transition: background-color $time-animation $function-cubic,
+    border-color $time-animation $function-cubic;
 }
 .modal-check:checked + .check-text span {
-  background-color: var(--accent);
+  background-color: $col-accent;
   border: none;
-  fill: var(--white);
+  fill: $col-icon-light;
 }
 .modal-field {
   position: relative;
 }
 .modal-check:hover + .check-text span {
-  border-color: var(--accent);
+  border-color: $col-accent;
   cursor: pointer;
 }
 .modal-check:focus + .check-text span {
-  border-color: var(--accent);
+  border-color: $col-accent;
 }
 .agreement-link {
   padding-left: 0.5em;
   cursor: pointer;
   text-decoration: underline;
-  color: var(--accent);
+  color: $col-accent;
 }
 .modal-btn {
   padding: 10px 32px;
@@ -171,17 +171,17 @@
 
   font-family: inherit;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--white);
+  color: $col-text-primary;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  background-color: var(--accent);
+  background-color: $col-accent;
 
   cursor: pointer;
-  transition: background-color var(--animation-time) var(--cubic-function);
+  transition: background-color $time-animation $function-cubic;
 }
 .modal-btn:hover,
 .modal-btn:focus {
-  background-color: var(--second-btn-color);
+  background-color: $col-btn-bg-secondary;
 }

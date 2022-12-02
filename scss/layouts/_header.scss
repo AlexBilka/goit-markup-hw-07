@@ -1,6 +1,6 @@
 .header {
-  background-color: var(--white);
-  border-bottom: 1px solid var(--brd-header);
+  background-color: $col-bg-light;
+  border-bottom: 1px solid $col-border-header;
 }
 .header-wrap {
   display: flex;
@@ -17,10 +17,10 @@
   line-height: 1.19;
 }
 .header .logo {
-  color: var(--logo-color-header);
+  color: $col-logo-dark;
 }
 .logo-accent {
-  color: var(--accent);
+  color: $col-accent;
 }
 .nav-list {
   display: flex;
@@ -35,16 +35,16 @@
   display: block;
   padding: 32px 0;
 
-  color: var(--title-color);
+  color: $col-title-primary;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: color var(--animation-time) var(--cubic-function);
+  transition: color $time-animation $function-cubic;
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--accent);
+  color: $col-accent;
 }
 .contact-list {
   display: flex;
@@ -54,7 +54,7 @@
   margin-left: 50px;
 }
 .current {
-  color: var(--accent);
+  color: $col-accent;
 }
 .current::after {
   position: absolute;
@@ -64,7 +64,7 @@
   height: 4px;
   content: "";
 
-  background-color: var(--accent);
+  background-color: $col-accent;
   border-radius: 2px;
 }
 .header-contact {
@@ -75,12 +75,12 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: color var(--animation-time) var(--cubic-function);
+  transition: color $time-animation $function-cubic;
 }
 .header-contact:hover,
 .header-contact:focus {
-  color: var(--accent);
-  fill: var(--accent);
+  color: $col-accent;
+  fill: $col-accent;
 }
 .contact-icon {
   margin-right: 10px;

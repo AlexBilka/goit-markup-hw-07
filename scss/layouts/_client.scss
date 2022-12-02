@@ -4,7 +4,7 @@
 .client-title {
   margin-bottom: 50px;
   text-align: center;
-  color: var(--title-color);
+  color: $col-title-primary;
   font-size: 36px;
   line-height: 1.16;
 }
@@ -16,14 +16,14 @@
   display: block;
   padding: 15px 32px;
   height: 92px;
-  border: 1px solid var(--icon-gray);
+  border: 1px solid $col-icon-bg-light;
   border-radius: 4px;
-  fill: var(--icon-gray);
-  transition: border var(--animation-time) var(--cubic-function),
-    fill var(--animation-time) var(--cubic-function);
+  fill: $col-icon-bg-light;
+  transition: border $time-animation $function-cubic,
+    fill $time-animation $function-cubic,
 }
 .client-link:hover,
 .client-link:focus {
-  fill: var(--accent);
-  border: 1px solid var(--accent);
+  fill: $col-accent;
+  border: 1px solid $col-accent;
 }

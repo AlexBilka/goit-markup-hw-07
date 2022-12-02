@@ -17,11 +17,11 @@
   align-items: center;
   margin-bottom: 30px;
   border-radius: 4px;
-  background-color: var(--portfolio-secondary-btn-color);
+  background-color: $col-bg-features-card;
 }
 .features-subtitle {
   margin-bottom: 10px;
-  color: var(--title-color);
+  color: $col-title-primary;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
