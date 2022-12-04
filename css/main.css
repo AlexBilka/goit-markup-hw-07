@@ -69,6 +69,30 @@ body {
   word-wrap: normal !important;
 }
 
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.header .logo {
+  color: #000000;
+}
+
+.logo-accent {
+  color: #2196f3;
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.footer .logo {
+  color: #ffffff;
+}
+
 .team-soc-list {
   display: flex;
   justify-content: center;
@@ -225,21 +249,6 @@ body {
   margin-left: 93px;
 }
 
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
-.header .logo {
-  color: #000000;
-}
-
-.logo-accent {
-  color: #2196f3;
-}
-
 .nav-list {
   display: flex;
 }
@@ -322,15 +331,6 @@ body {
 .footer-wrap {
   display: flex;
   align-items: baseline;
-}
-
-.footer .logo {
-  display: block;
-  margin-bottom: 30px;
-}
-
-.footer .logo {
-  color: #ffffff;
 }
 
 .address-item + .address-item {
