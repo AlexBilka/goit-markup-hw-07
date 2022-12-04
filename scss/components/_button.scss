@@ -1,0 +1,62 @@
+.hero-btn {
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  font-family: inherit;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: $col-text-secondary;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: $col-accent;
+  transition: background-color $time-animation $function-cubic;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: $col-btn-bg-secondary;
+}
+
+.follow-form-btn {
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  border-radius: 4px;
+
+  font-family: inherit;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: $col-text-secondary;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: $col-accent;
+  transition: background-color $time-animation $function-cubic;
+}
+.follow-form-btn:hover,
+.follow-form-btn:focus {
+  background-color: $col-btn-bg-secondary;
+}
+
+.modal-btn {
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin: 25px auto 0 auto;
+  width: 200px;
+
+  font-family: inherit;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: $col-text-secondary;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: $col-accent;
+  
+  transition: background-color $time-animation $function-cubic;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: $col-btn-bg-secondary;
+}

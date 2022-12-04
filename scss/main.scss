@@ -3,13 +3,17 @@
 @import "./base/common";
 @import "./utils/hide";
 
+@import "./components/logo";
+@import "./components/social";
+@import "./components/button";
+@import "./components/section-title";
+@import "./components/header";
+@import "./components/footer";
 @import "./components/modal";
 
-@import "./layouts/header";
 @import "./layouts/hero";
 @import "./layouts/features";
 @import "./layouts/business";
 @import "./layouts/team";
 @import "./layouts/client";
-@import "./layouts/footer";
 @import "./layouts/portfolio";
