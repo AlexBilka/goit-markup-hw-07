@@ -12,11 +12,11 @@
     url(../images/hero-bg.jpg);
   background-color: $col-bg-dark;
 }
-.hero-wrap {
+.hero__wrap {
   max-width: 696px;
   margin: 0 auto;
 }
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
 
   color: $col-text-secondary;

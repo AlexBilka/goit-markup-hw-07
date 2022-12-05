@@ -1,4 +1,4 @@
-.hero-btn {
+.hero__btn {
   padding: 10px 32px;
   border-radius: 4px;
 
@@ -12,12 +12,12 @@
   background-color: $col-accent;
   transition: background-color $time-animation $function-cubic;
 }
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: $col-btn-bg-secondary;
 }
 
-.follow-form-btn {
+.follow__btn {
   display: flex;
   align-items: center;
   padding-left: 28px;
@@ -34,12 +34,12 @@
   background-color: $col-accent;
   transition: background-color $time-animation $function-cubic;
 }
-.follow-form-btn:hover,
-.follow-form-btn:focus {
+.follow__btn:hover,
+.follow__btn:focus {
   background-color: $col-btn-bg-secondary;
 }
 
-.modal-btn {
+.modal__btn {
   padding: 10px 32px;
   border-radius: 4px;
   margin: 25px auto 0 auto;
@@ -56,7 +56,7 @@
   
   transition: background-color $time-animation $function-cubic;
 }
-.modal-btn:hover,
-.modal-btn:focus {
+.modal__btn:hover,
+.modal__btn:focus {
   background-color: $col-btn-bg-secondary;
 }
