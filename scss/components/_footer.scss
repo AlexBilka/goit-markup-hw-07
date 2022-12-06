@@ -7,36 +7,26 @@
   display: flex;
   align-items: baseline;
 }
-.address-item + .address-item {
+.address-list__item + .address-list__item {
   margin-top: 10px;
 }
-.address-item {
+.address-list__item {
   color: $col-text-secondary;
 }
-.footer-link {
+.address-list__link {
   transition: color $time-animation $function-cubic;
 }
-.footer-link:hover,
-.footer-link:focus {
+.address-list__link:hover,
+.address-list__link:focus {
   color: $col-accent;
 }
 .opacity {
   opacity: 60%;
 }
-.follow-wrap {
+.follow {
   margin-left: 94px;
 }
-.follow-title {
-  margin-bottom: 20px;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: $col-text-secondary;
-}
-.follow-form-wrap {
-  margin-left: auto;
-}
-.follow-form-title {
+.follow__title {
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14;
@@ -44,9 +34,19 @@
   color: $col-text-secondary;
 }
 .follow-form {
+  margin-left: auto;
+}
+.follow-form__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $col-text-secondary;
+}
+.follow-form__form {
   display: flex;
 }
-.follow-form-input {
+.follow-form__input {
   width: 358px;
   height: 50px;
   padding-left: 15px;
@@ -59,8 +59,8 @@
   outline: transparent;
   transition: border-color $time-animation $function-cubic;
 }
-.follow-form-input:hover,
-.follow-form-input:focus {
+.follow-form__input:hover,
+.follow-form__input:focus {
   border: $border-follow-input-hover;
 }
 .follow-form-icon {

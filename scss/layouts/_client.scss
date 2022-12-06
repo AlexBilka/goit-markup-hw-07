@@ -1,11 +1,11 @@
 .client {
   padding-top: 94px;
 }
-.client-list {
+.icon-list {
   display: flex;
   justify-content: space-between;
 }
-.client-link {
+.icon-list__link {
   display: block;
   padding: 15px 32px;
   height: 92px;
@@ -15,8 +15,8 @@
   transition: border $time-animation $function-cubic,
     fill $time-animation $function-cubic,
 }
-.client-link:hover,
-.client-link:focus {
+.icon-list__link:hover,
+.icon-list__link:focus {
   fill: $col-accent;
   border: 1px solid $col-accent;
 }

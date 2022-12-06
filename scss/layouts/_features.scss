@@ -1,16 +1,17 @@
 .features {
   padding-top: 94px;
 }
-.features-list {
+.icon-list {
   display: flex;
 }
-.features-item {
+.icon-list__item {
   width: 270px;
 }
-.features-item + .features-item {
+
+.icon-list__item + .icon-list__item {
   margin-left: 30px;
 }
-.features-icon-wrap {
+.icon-list__card {
   height: 120px;
   display: flex;
   justify-content: center;
@@ -19,7 +20,7 @@
   border-radius: 4px;
   background-color: $col-bg-features-card;
 }
-.features-subtitle {
+.icon-list__subtitle {
   margin-bottom: 10px;
   color: $col-title-primary;
   font-size: 14px;

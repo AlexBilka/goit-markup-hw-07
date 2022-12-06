@@ -1,13 +1,13 @@
-.business-item + .business-item {
-  margin-left: 30px;
-}
-.business-item {
-  position: relative;
-}
-.business-list {
+.picture-list {
   display: flex;
 }
-.business-subtitle {
+.picture-list__item + .picture-list__item {
+  margin-left: 30px;
+}
+.picture-list__item {
+  position: relative;
+}
+.picture__subtitle {
   display: flex;
   align-items: center;
   justify-content: center;
