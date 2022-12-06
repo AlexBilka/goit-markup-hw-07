@@ -1,7 +1,8 @@
-.hero__btn {
-  padding: 10px 32px;
-  border-radius: 4px;
+.btn {
+  border-style: none;
+  cursor: pointer;
 
+  border-radius: 4px;
   font-family: inherit;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: $col-text-secondary;
@@ -10,11 +11,17 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   background-color: $col-accent;
+
   transition: background-color $time-animation $function-cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $col-btn-bg-secondary;
+  }
 }
-.hero__btn:hover,
-.hero__btn:focus {
-  background-color: $col-btn-bg-secondary;
+
+.hero__btn {
+  padding: 10px 32px;
 }
 
 .follow__btn {
@@ -22,41 +29,34 @@
   align-items: center;
   padding-left: 28px;
   padding-right: 28px;
-  border-radius: 4px;
-
-  font-family: inherit;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: $col-text-secondary;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  background-color: $col-accent;
-  transition: background-color $time-animation $function-cubic;
-}
-.follow__btn:hover,
-.follow__btn:focus {
-  background-color: $col-btn-bg-secondary;
 }
 
 .modal__btn {
   padding: 10px 32px;
-  border-radius: 4px;
   margin: 25px auto 0 auto;
   width: 200px;
+}
+
+.filter-btn {
+  border-style: none;
+  cursor: pointer;
+  padding: 6px 22px;
+  border-radius: 4px;
 
   font-family: inherit;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: $col-text-secondary;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  background-color: $col-accent;
-  
-  transition: background-color $time-animation $function-cubic;
-}
-.modal__btn:hover,
-.modal__btn:focus {
-  background-color: $col-btn-bg-secondary;
+  line-height: 1.62;
+  color: $col-title-primary;
+  background-color: $time-animation $function-cubic;
+  transition: background-color $time-animation $function-cubic,
+    color $time-animation $function-cubic,
+    box-shadow $time-animation $function-cubic;
+
+  &:hover {
+    color: $col-text-secondary;
+    background-color: $col-accent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }

@@ -22,10 +22,12 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform $time-animation $function-cubic;
+
+  .backdrop.is-hidden {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
 }
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.5);
-}
+
 .modal-close {
   display: flex;
   align-items: center;
@@ -42,11 +44,13 @@
   background-color: $col-bg-light;
   outline: transparent;
   transition: fill $time-animation $function-cubic;
+
+  &:hover,
+  &:focus {
+    fill: $col-accent;
+  }
 }
-.modal-close:hover,
-.modal-close:focus {
-  fill: $col-accent;
-}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -79,6 +83,10 @@
   font-size: 12px;
   letter-spacing: 0.01em;
 }
+.modal-icon,
+.modal-icon {
+  transition: fill $time-animation $function-cubic;
+}
 .modal-input {
   width: 100%;
   height: 40px;
@@ -89,19 +97,17 @@
   background-color: transparent;
   outline: transparent;
   transition: border-color $time-animation $function-cubic;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $col-accent;
+  }
+  &:hover + .modal-icon,
+  &:focus + .modal-icon {
+    fill: $col-accent;
+  }
 }
-.modal-input:hover,
-.modal-input:focus {
-  border: 1px solid $col-accent;
-}
-.modal-icon,
-.modal-icon {
-  transition: fill $time-animation $function-cubic;
-}
-.modal-input:hover + .modal-icon,
-.modal-input:focus + .modal-icon {
-  fill: $col-accent;
-}
+
 .modal-coment {
   width: 100%;
   height: 120px;
@@ -115,11 +121,13 @@
   outline: transparent;
   resize: none;
   transition: border-color $time-animation $function-cubic;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $col-accent;
+  }
 }
-.modal-coment:hover,
-.modal-coment:focus {
-  border: 1px solid $col-accent;
-}
+
 .check-text {
   display: flex;
   align-items: center;
@@ -137,26 +145,29 @@
   align-items: center;
   justify-content: center;
   fill: transparent;
-}
-.check-text span {
+
   transition: background-color $time-animation $function-cubic,
     border-color $time-animation $function-cubic;
 }
-.modal-check:checked + .check-text span {
-  background-color: $col-accent;
-  border: none;
-  fill: $col-icon-light;
+.modal-check {
+  &:checked + .check-text span {
+    background-color: $col-accent;
+    border: none;
+    fill: $col-icon-light;
+  }
+  &:hover + .check-text span {
+    border-color: $col-accent;
+    cursor: pointer;
+  }
+  &:focus + .check-text span {
+    border-color: $col-accent;
+  }
 }
+
 .modal-field {
   position: relative;
 }
-.modal-check:hover + .check-text span {
-  border-color: $col-accent;
-  cursor: pointer;
-}
-.modal-check:focus + .check-text span {
-  border-color: $col-accent;
-}
+
 .agreement-link {
   padding-left: 0.5em;
   cursor: pointer;

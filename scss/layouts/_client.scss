@@ -4,19 +4,19 @@
 .icon-list {
   display: flex;
   justify-content: space-between;
-}
-.icon-list__link {
-  display: block;
-  padding: 15px 32px;
-  height: 92px;
-  border: 1px solid $col-icon-bg-light;
-  border-radius: 4px;
-  fill: $col-icon-bg-light;
-  transition: border $time-animation $function-cubic,
-    fill $time-animation $function-cubic,
-}
-.icon-list__link:hover,
-.icon-list__link:focus {
-  fill: $col-accent;
-  border: 1px solid $col-accent;
+  &__link {
+    display: block;
+    padding: 15px 32px;
+    height: 92px;
+    border: 1px solid $col-icon-bg-light;
+    border-radius: 4px;
+    fill: $col-icon-bg-light;
+    transition: border $time-animation $function-cubic,
+      fill $time-animation $function-cubic;
+    &:hover,
+    &:focus {
+      fill: $col-accent;
+      border: 1px solid $col-accent;
+    }
+  }
 }

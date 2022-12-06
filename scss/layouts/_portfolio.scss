@@ -1,41 +1,25 @@
 .portfolio {
   padding-top: 94px;
 }
+
 .filter-list {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
   gap: 8px;
 }
-.filter-btn {
-  padding: 6px 22px;
-  border-radius: 4px;
 
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  color: $col-title-primary;
-  background-color: $time-animation $function-cubic;
-  transition: background-color $time-animation $function-cubic,
-    color $time-animation $function-cubic,
-    box-shadow $time-animation $function-cubic;
-}
-.filter-btn:hover {
-  color: $col-text-secondary;
-  background-color: $col-accent;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 .project-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
+
 .project-thumb-wrap {
   position: relative;
   overflow: hidden;
 }
+
 .project-thumb-overlay {
   width: 100%;
   height: 100%;
@@ -52,19 +36,21 @@
   color: $col-text-secondary;
   background-color: $col-overlay-portfolio-card;
 }
-.project-item:hover .project-thumb-overlay,
-.project-item:focus .project-thumb-overlay {
-  transform: translateY(0);
-}
+
 .project-item {
   display: block;
   transition: box-shadow $time-animation $function-cubic;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:hover .project-thumb-overlay,
+  &:focus .project-thumb-overlay {
+    transform: translateY(0);
+  }
 }
-.project-item:hover,
-.project-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .project-title {
   margin-bottom: 4px;
   font-size: 18px;
@@ -72,10 +58,12 @@
   letter-spacing: 0.06em;
   color: $col-title-primary;
 }
+
 .project-subtext {
   padding: 20px 24px;
   border: 1px solid $col-border-portfolio-card;
 }
+
 .project-text {
   font-size: 16px;
   line-height: 1.87;
